@@ -25,7 +25,7 @@ html {
 /* posts */
 
 .main-content {
-    height: 1318px;
+    height: 1242px;
 }
 
 .posts:first-child {
@@ -66,6 +66,17 @@ html {
     width: 210px;
 }
 
+/* post navigation */
+
+.posts-navigation {
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 0;
+    border-left: 1px solid #e1e0e0;
+    border-right: 1px solid #e1e0e0;
+    width: 980px;
+}
+
 /* footer */
 
 .footer-container {
@@ -74,10 +85,6 @@ html {
 }
 
 small {
-    /* font-size: 0.875rem;
-    line-height: 20px;
-    color: #a6a6a6;
-    width: 524px; */
     margin-bottom: 40px;
 }
 
