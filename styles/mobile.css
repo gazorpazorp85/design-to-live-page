@@ -94,7 +94,7 @@ a {
     overflow: hidden;
     background-color: #2929296c;
     width: 100%;
-    transform: translate(-100%, 0);
+    transform: translate(0, -110%);
     transition: transform .6s;
 }
 
@@ -102,10 +102,11 @@ a {
     transform: translate(0, 0);
 }
 
-.main-menu > * {
+.main-menu>* {
     width: 100%;
     text-align: center;
 }
+
 .main-menu>*:not(:first-child) {
     margin-left: 0;
 }
@@ -138,14 +139,13 @@ a {
     color: #58c93a;
 }
 
-
 /* main content */
 
 /* posts */
 
 .main-content {
     padding: 60px 10px 0px 10px;
-    height: 1780px;
+    min-height: 1850px;
     top: 60px;
 }
 
@@ -156,7 +156,7 @@ a {
 .post {
     margin-bottom: 1.33rem;
     width: 100%;
-    height: 550px;
+    min-height: 550px;
     flex-direction: column;
 }
 
@@ -237,7 +237,6 @@ a {
 }
 
 .previous {
-    margin-left: 30px;
     margin-top: 30px;
     height: 14px;
     letter-spacing: 0.9px;
@@ -245,19 +244,100 @@ a {
 }
 
 .next {
-    margin-right: 30px;
     margin-top: 30px;
     height: 14px;
     letter-spacing: 0.9px;
     cursor: pointer;
 }
 
-.arrow-previous {
+.read-more {
+    margin-top: 30px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.modal {
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #2929296c;
+    transform: translate(-100%, 0);
+    transition: transform .6s;
+}
+
+.modal-open .modal {
+    transform: translate(0, 0);
+}
+
+.modal>* {
+    color: black;
+    text-align: center;
+    background-color: white;
+    height: 100%;
+}
+
+.modal-card h2 {
+    margin-top: 9rem;
+    margin-bottom: 3rem;
+}
+
+.modal-card {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    color: #4f4e4e;
+    border-radius: 10px;
+}
+
+form div {
+    margin-bottom: 3rem;
+}
+
+#input-email {
+    height: 40px;
+    width: 200px;
+    margin-right: 10px;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    border: solid #c2c2c2;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.close-modal, .submit {
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    line-height: 35px;
+    border: 2px solid #c2c2c2;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arrow-image-prev {
+    visibility: hidden;
     margin-right: 10px;
 }
 
-.arrow-next {
+.previous:hover .arrow-image-prev {
+    visibility: visible;
+}
+
+.arrow-image-next {
+    visibility: hidden;
     margin-left: 10px;
+}
+
+.next:hover .arrow-image-next {
+    visibility: visible;
 }
 
 /* footer */

@@ -10,8 +10,6 @@
 </head>
 
 <body>
-    <div class="screen" onclick="toggleMenu()"></div>
-
     <nav class="main-nav">
         <div class="main-nav container flex align-center space-between">
             <div class="logo">blogin</div>
@@ -96,12 +94,28 @@
     </main>
     <div class="posts-navigation flex space-between">
         <div class="previous flex align-center">
-            <img src="./img/grey-arrow-left.png" class="arrow-previous" />
+            <img src="./img/grey-arrow-left.png" class="arrow-image-prev" />
             Previous
+        </div>
+        <div class="read-more flex align-center" onclick="onToggleModal()">
+            Read More
         </div>
         <div class="next flex align-center">
             Next
-            <img src="./img/grey-arrow-right.png" class="arrow-next" />
+            <img src="./img/grey-arrow-right.png" class="arrow-image-next" />
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-border">
+            <div class="modal-card flex column align-center">
+                <h2>Join us to get access to the latest stories!</h2>
+                <form>
+                    <div>Please enter your e-mail address to get all of our latest updates: </div>
+                    <input type="email" id="input-email" placeholder="example@something.com">
+                    <input type="submit" value="Submit" class="submit">
+                    <div class="close-modal" onclick="onToggleModal()">Close</div>
+                </form>
+            </div>
         </div>
     </div>
     <footer class="main-footer">

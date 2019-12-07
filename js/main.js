@@ -7,3 +7,7 @@ function toggleMenu() {
         elButton[i].classList.toggle('hidden');
     }
 }
+
+function onToggleModal() {
+    document.body.classList.toggle('modal-open');
+}

@@ -25,7 +25,7 @@ html {
 /* posts */
 
 .main-content {
-    height: 1242px;
+    min-height: 1242px;
 }
 
 .posts:first-child {
@@ -69,12 +69,22 @@ html {
 /* post navigation */
 
 .posts-navigation {
-    margin-left: auto;
-    margin-right: auto;
     border-top: 0;
-    border-left: 1px solid #e1e0e0;
-    border-right: 1px solid #e1e0e0;
-    width: 980px;
+    max-width: 980px;
+}
+
+.modal>* {
+    height: 45%;
+    width: 80%;
+}
+
+.modal-card h2 {
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+form div {
+    margin-bottom: 2.5rem;
 }
 
 /* footer */
