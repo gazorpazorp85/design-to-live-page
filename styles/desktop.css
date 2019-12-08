@@ -69,59 +69,5 @@ html {
 /* post navigation */
 
 .posts-navigation {
-    border-top: 0;
     max-width: 980px;
-}
-
-.modal>* {
-    height: 45%;
-    width: 80%;
-}
-
-.modal-card h2 {
-    margin-top: 3rem;
-    margin-bottom: 2.5rem;
-}
-
-form div {
-    margin-bottom: 2.5rem;
-}
-
-/* footer */
-
-.footer-container {
-    height: 315px;
-    padding-top: 80px;
-}
-
-small {
-    margin-bottom: 40px;
-}
-
-/* Helpers */
-
-/* flex helpers */
-
-.flex {
-    display: flex;
-}
-
-.space-between {
-    justify-content: space-between;
-}
-
-.align-center {
-    align-items: center;
-}
-
-.flex.column {
-    flex-direction: column;
-}
-
-/* list helpers */
-
-.clean-list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
 }

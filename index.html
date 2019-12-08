@@ -11,32 +11,31 @@
 
 <body>
     <nav class="main-nav">
-        <div class="main-nav container flex align-center space-between">
-            <div class="logo">blogin</div>
-            <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">☰</div>
-            <div id="menu-btn-close" class="menu-btn hidden" onclick="toggleMenu()">X</div>
+        <div class="main-nav container flex space-between align-center">
+            <div class="logo capitalize">blogin</div>
+            <div class="menu-btn" onclick="toggleMenu()">☰</div>
+            <div class="menu-btn hidden" onclick="toggleMenu()">X</div>
             <ul class="main-menu flex clean-list">
-                <div class="dropdown">
-                    <li class="cell active dropbtn">
-                        <a href="#" onclick="onToggleActive(this)"><span class="cell-link">j</span>ournal</a>
-                    </li>
-                    <div class="journal-dropdown-menu">
-                        <div class="journal-dropdown-content">
-                            <a href="#" class="journal-dropdown-content link">July 2017</a>
-                            <a href="#" class="journal-dropdown-content link">April 2017</a>
-                            <a href="#" class="journal-dropdown-content link">January 2017</a>
-                            <a href="#" class="journal-dropdown-content link">October 2017</a>
+                <li class="cell active journal-menu">
+                    <a href="#" onclick="onToggleActive(this)"><span class="capitalize">journal</span>
+                        <div class="journal-dropdown-menu">
+                            <div class="journal-dropdown-content">
+                                <a href="#" class="journal-dropdown-content link">July 2017</a>
+                                <a href="#" class="journal-dropdown-content link">April 2017</a>
+                                <a href="#" class="journal-dropdown-content link">January 2017</a>
+                                <a href="#" class="journal-dropdown-content link">October 2017</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <li class="cell">
-                    <a href="#" onclick="onToggleActive(this)"><span class="cell-link">a</span>bout</a>
+                    </a>
                 </li>
                 <li class="cell">
-                    <a href="#" onclick="onToggleActive(this)"><span class="cell-link">w</span>ork</a>
+                    <a href="#" onclick="onToggleActive(this)"><span class="capitalize">about</span></a>
                 </li>
                 <li class="cell">
-                    <a href="#" onclick="onToggleActive(this)"><span class="cell-link">c</span>ontact</a>
+                    <a href="#" onclick="onToggleActive(this)"><span class="capitalize">work</span></a>
+                </li>
+                <li class="cell">
+                    <a href="#" onclick="onToggleActive(this)"><span class="capitalize">contact</span></a>
                 </li>
             </ul>
         </div>
@@ -44,7 +43,7 @@
     <main class="main-content container">
         <ul class="posts clean-list">
             <li class="post flex">
-                <img src="./img/img01.jpeg" alt="" class="post-image">
+                <img src="./img/img01.jpeg" alt="train tracks" title="train tracks" class="post-image">
                 <div class="post-text-box flex column">
                     <h2 class="post-title">Duis aute irure dolor in henderit in voluptate.</h2>
                     <div class="post-content">
@@ -62,7 +61,7 @@
                 </div>
             </li>
             <li class="post flex">
-                <img src="./img/img02.jpeg" alt="" class="post-image">
+                <img src="./img/img02.jpeg" alt="sundown on field" title="sundown on field" class="post-image">
                 <div class="post-text-box flex column">
                     <h2 class="post-title">Duis aute irure dolor in henderit in voluptate.</h2>
                     <div class="post-content">
@@ -80,7 +79,7 @@
                 </div>
             </li>
             <li class="post flex">
-                <img src="./img/img03.jpeg" alt="" class="post-image">
+                <img src="./img/img03.jpeg" alt="wheat grain" title="wheat grain" class="post-image">
                 <div class="post-text-box flex column">
                     <h2 class="post-title">Duis aute irure dolor in henderit in voluptate.</h2>
                     <div class="post-content">
@@ -122,7 +121,7 @@
     </div>
     <footer class="main-footer">
         <div class="footer-container container flex column align-center">
-            <div class="footer-logo logo">Blogin</div>
+            <div class="footer-logo logo capitalize">blogin</div>
             <small>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at
                 <a href="http://www.pixelhint.com">Pixelhint.com</a>
             </small>

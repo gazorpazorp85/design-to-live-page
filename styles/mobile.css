@@ -58,11 +58,6 @@ a {
     font-weight: 400;
 }
 
-.logo::first-letter {
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-}
-
 .logo::after {
     content: '.';
     color: #58c93a;
@@ -119,15 +114,9 @@ a {
     border: 1px solid black;
 }
 
-.cell-link {
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-}
-
 .cell {
     width: 80%;
     height: 100px;
-    text-align: center;
     line-height: 60px;
 }
 
@@ -141,7 +130,7 @@ a {
     color: #58c93a;
 }
 
-.dropdown-content {
+.journal-dropdown-content {
     display: none;
 }
 
@@ -254,6 +243,20 @@ a {
     cursor: pointer;
 }
 
+.previous:hover::before  {
+    content: url('../img/grey-arrow-left.png');
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.next:hover::after  {
+    content: url('../img/grey-arrow-right.png');
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+/* read more modal */
+
 .read-more {
     margin-top: 30px;
     height: 14px;
@@ -324,18 +327,6 @@ form div {
     border-radius: 30px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.previous:hover::before  {
-    content: url('../img/grey-arrow-left.png');
-    margin-bottom: 5px;
-    margin-right: 10px;
-}
-
-.next:hover::after  {
-    content: url('../img/grey-arrow-right.png');
-    margin-bottom: 5px;
-    margin-left: 10px;
 }
 
 /* footer */
@@ -431,9 +422,9 @@ small a {
     justify-content: space-between;
 }
 
-/* .flex .full {
-    flex: 1;
-} */
+.flex-end {
+    justify-content: flex-end;
+}
 
 .align-center {
     align-items: center;
@@ -449,4 +440,11 @@ small a {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+/* style helpers */
+
+.capitalize {
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
 }
