@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    min-width: 380px;
     margin: 0;
     font-family: lato, sans-serif;
 }
@@ -132,10 +133,16 @@ a {
 
 .cell:first-child {
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cell:hover {
     color: #58c93a;
+}
+
+.dropdown-content {
+    display: none;
 }
 
 /* main content */
@@ -215,13 +222,9 @@ a {
     cursor: pointer;
 }
 
-.arrow-image {
-    visibility: hidden;
+.text:hover::after {
+    content: url('../img/green-arrow-right.png');
     padding-left: 10px;
-}
-
-.continue-reading:hover .arrow-image {
-    visibility: visible;
 }
 
 /* post navigation */
@@ -237,6 +240,7 @@ a {
 
 .previous {
     margin-top: 30px;
+    margin-left: 20px;
     height: 14px;
     letter-spacing: 0.9px;
     cursor: pointer;
@@ -244,6 +248,7 @@ a {
 
 .next {
     margin-top: 30px;
+    margin-right: 20px;
     height: 14px;
     letter-spacing: 0.9px;
     cursor: pointer;
@@ -321,22 +326,16 @@ form div {
     margin-right: auto;
 }
 
-.arrow-image-prev {
-    visibility: hidden;
+.previous:hover::before  {
+    content: url('../img/grey-arrow-left.png');
+    margin-bottom: 5px;
     margin-right: 10px;
 }
 
-.previous:hover .arrow-image-prev {
-    visibility: visible;
-}
-
-.arrow-image-next {
-    visibility: hidden;
+.next:hover::after  {
+    content: url('../img/grey-arrow-right.png');
+    margin-bottom: 5px;
     margin-left: 10px;
-}
-
-.next:hover .arrow-image-next {
-    visibility: visible;
 }
 
 /* footer */
@@ -380,8 +379,9 @@ small a {
     background-color: #e5e5e5;
 }
 
-.facebook img {
+.fa-facebook-f {
     padding: 13px 16px;
+    color: white;
 }
 
 .social-logo:hover {
@@ -400,16 +400,19 @@ small a {
     background-color: #ea4c89;
 }
 
-.twitter img {
+.fa-twitter {
     padding: 14px 12px;
+    color: white;
 }
 
-.behance img {
-    padding: 15px 12px 14px 12px;
+.fa-behance {
+    padding: 13px 12px 16px 12px;
+    color: white;
 }
 
-.dribble img {
+.fa-dribbble {
     padding: 13px;
+    color: white;
 }
 
 .social-logo:not(:last-child) {
@@ -427,6 +430,10 @@ small a {
 .space-between {
     justify-content: space-between;
 }
+
+/* .flex .full {
+    flex: 1;
+} */
 
 .align-center {
     align-items: center;

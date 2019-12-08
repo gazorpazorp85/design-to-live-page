@@ -11,3 +11,10 @@ function toggleMenu() {
 function onToggleModal() {
     document.body.classList.toggle('modal-open');
 }
+
+function onToggleActive(elLinkClicked) {
+    let elLastActive = document.querySelector('.cell.active');
+    elLastActive.classList.toggle('active');
+    let currClicked = elLinkClicked;
+    currClicked.parentElement.classList.toggle('active');
+}

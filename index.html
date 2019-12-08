@@ -16,17 +16,27 @@
             <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">☰</div>
             <div id="menu-btn-close" class="menu-btn hidden" onclick="toggleMenu()">X</div>
             <ul class="main-menu flex clean-list">
+                <div class="dropdown">
+                    <li class="cell active dropbtn">
+                        <a href="#" onclick="onToggleActive(this)"><span class="cell-link">j</span>ournal</a>
+                    </li>
+                    <div class="journal-dropdown-menu">
+                        <div class="journal-dropdown-content">
+                            <a href="#" class="journal-dropdown-content link">July 2017</a>
+                            <a href="#" class="journal-dropdown-content link">April 2017</a>
+                            <a href="#" class="journal-dropdown-content link">January 2017</a>
+                            <a href="#" class="journal-dropdown-content link">October 2017</a>
+                        </div>
+                    </div>
+                </div>
                 <li class="cell">
-                    <a href="#"><span class="cell-link">j</span>ournal</a>
+                    <a href="#" onclick="onToggleActive(this)"><span class="cell-link">a</span>bout</a>
                 </li>
                 <li class="cell">
-                    <a href="#"><span class="cell-link">a</span>bout</a>
+                    <a href="#" onclick="onToggleActive(this)"><span class="cell-link">w</span>ork</a>
                 </li>
                 <li class="cell">
-                    <a href="#"><span class="cell-link">w</span>ork</a>
-                </li>
-                <li class="cell">
-                    <a href="#"><span class="cell-link">c</span>ontact</a>
+                    <a href="#" onclick="onToggleActive(this)"><span class="cell-link">c</span>ontact</a>
                 </li>
             </ul>
         </div>
@@ -48,7 +58,6 @@
                         </p>
                     </div>
                     <div class="continue-reading text" onclick="onToggleModal()">Continue Reading
-                        <img src="./img/green-arrow-right.png" class="arrow-image" />
                     </div>
                 </div>
             </li>
@@ -67,7 +76,6 @@
                         </p>
                     </div>
                     <div class="continue-reading text" onclick="onToggleModal()">Continue Reading
-                        <img src="./img/green-arrow-right.png" class="arrow-image" />
                     </div>
                 </div>
             </li>
@@ -86,7 +94,6 @@
                         </p>
                     </div>
                     <div class="continue-reading text" onclick="onToggleModal()">Continue Reading
-                        <img src="./img/green-arrow-right.png" class="arrow-image" />
                     </div>
                 </div>
             </li>
@@ -94,15 +101,10 @@
     </main>
     <div class="posts-navigation flex space-between">
         <div class="previous flex align-center">
-            <img src="./img/grey-arrow-left.png" class="arrow-image-prev" />
             Previous
         </div>
-        <!-- <div class="read-more flex align-center" onclick="onToggleModal()">
-            Read More
-        </div> -->
         <div class="next flex align-center">
             Next
-            <img src="./img/grey-arrow-right.png" class="arrow-image-next" />
         </div>
     </div>
     <div class="modal">
@@ -127,27 +129,28 @@
             <div class="social-links flex ">
                 <div class="social-logo">
                     <a href="http://www.facebook.com" class="facebook">
-                        <img src="img/facebook.png" />
+                        <i class="fab fa-facebook-f"></i>
                     </a>
                 </div>
                 <div class="social-logo">
                     <a href="http://www.twitter.com" class="twitter">
-                        <img src="img/tweeter.png" />
+                        <i class="fab fa-twitter"></i>
                     </a>
                 </div>
                 <div class="social-logo">
                     <a href="http://www.behance.net" class="behance">
-                        <img src="img/behance.png" />
+                        <i class="fab fa-behance"></i>
                     </a>
                 </div>
                 <div class="social-logo">
                     <a href="http://www.dribble.com" class="dribble">
-                        <img src="img/dribble.png" />
+                        <i class="fab fa-dribbble"></i>
                     </a>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/aa5b8f9a54.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 
